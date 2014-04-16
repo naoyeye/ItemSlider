@@ -136,21 +136,28 @@
     display: block;
     width: 40px;
     height: 40px;
-    font-size: 0;
+    background: #333;
+    text-align: center;
+    line-height: 40px;
+    font-size: 24px;
+    color: #fff;
+    font-family: 'Lato', Calibri, Arial, sans-serif;
+}
+
+.mi-slider-arrow-nav a:hover {
+    background: #666;
 }
 
 .mi-slider-arrow-nav a.nav-left {
     left: 0;
     top: 50%;
     margin-top: -20px;
-    background: green;
 }
 
 .mi-slider-arrow-nav a.nav-right {
     right: 0;
     top: 50%;
     margin-top: -20px;
-    background: red;
 }
 
 /* Move classes and animations */

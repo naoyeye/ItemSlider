@@ -1,0 +1,20 @@
+{
+  "name": "ItemSlider-clean",
+  "version": "0.0.0",
+  "homepage": "https://github.com/naoyeye/ItemSlider",
+  "authors": [
+    "J.Y Han <ihanjiyun@gmail.com>"
+  ],
+  "description": "modify https://github.com/codrops/ItemSlider, add bower support.",
+  "keywords": [
+    "ItemSlider"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}

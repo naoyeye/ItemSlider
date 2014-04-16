@@ -15,6 +15,7 @@
 			this.$categories = this.$el.children( 'ul' );
 			// the navigation
 			this.$navcategories = this.$el.find( 'nav > a' );
+			this.$navigation = this.$el.find( '.mi-slider-arrow-nav > a' );
 			var animEndEventNames = {
 				'WebkitAnimation' : 'webkitAnimationEnd',
 				'OAnimation' : 'oAnimationEnd',
@@ -47,7 +48,35 @@
 
 			var self = this;
 			this.$navcategories.on( 'click.catslider', function() {
+				console.log($( this ).index());
 				self.showCategory( $( this ).index() );
+				return false;
+			} );
+
+			this.$navigation.on( 'click.catslider', function() {
+				var current = self.$categories.eq( self.current ).index();
+				var last = self.$categories.size() - 1;
+
+				console.log( current );
+
+				console.log( last );
+
+				// if click left nav
+				if( $(this).index() === 0 ) {
+					// if current is the fist one
+					if( current === 0 ){
+						self.showCategory( last );
+					} else {
+						self.showCategory( current - 1 );
+					}
+				} else {
+					if( current === last ){
+						self.showCategory( 0 );
+					} else {
+						self.showCategory( current + 1 );
+					}
+				}
+
 				return false;
 			} );
 

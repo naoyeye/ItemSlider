@@ -57,10 +57,6 @@
 				var current = self.$categories.eq( self.current ).index();
 				var last = self.$categories.size() - 1;
 
-				console.log( current );
-
-				console.log( last );
-
 				// if click left nav
 				if( $(this).index() === 0 ) {
 					// if current is the fist one

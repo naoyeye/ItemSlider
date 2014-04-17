@@ -48,7 +48,6 @@
 
 			var self = this;
 			this.$navcategories.on( 'click.catslider', function() {
-				console.log($( this ).index());
 				self.showCategory( $( this ).index() );
 				return false;
 			} );
